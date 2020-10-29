@@ -1,0 +1,24 @@
+//Bismillah
+#include <bits/stdc++.h>
+
+using namespace std;
+
+void solution() {
+    int N, n, i, max = 0, tmp = 0, sum = 0;
+    cin>>N;
+    int a = 0;
+    while(N --) {
+        cin>>n;
+        if (n > max)  max=n;
+        sum = sum + n;
+        a ++;
+    }
+    tmp =  max*a;
+    cout<<tmp-sum<<endl;
+}
+
+int main() {
+    solution();
+
+    return 0;
+}

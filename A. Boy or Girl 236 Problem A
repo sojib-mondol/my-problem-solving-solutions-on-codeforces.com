@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void solution(){
+    string str;
+    cin>>str;
+    sort(str.begin(), str.end());
+
+    auto res = unique(str.begin(), str.end());
+
+    string newstr = string(str.begin(), res);
+    int tmp = newstr.length();
+    if(tmp%2 == 0){
+        cout<<"CHAT WITH HER!"<<endl;
+    }else{
+        cout<<"IGNORE HIM!"<<endl;
+    }
+
+}
+ int main(){
+    solution();
+ }

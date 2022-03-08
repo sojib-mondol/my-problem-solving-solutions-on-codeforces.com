@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
+
+int main() {
+
+    ll t;
+    cin>>t;
+    while (t--)
+    {
+        ll n;
+        cin>>n;
+        ll a[n], j, i;
+        for(i = 0; i < n; i ++) cin>>a[i];
+        
+        for(i = 0; i < n; i ++) {
+            if(a[i] == 0) break;
+        }
+        
+        for(j = n - 1; j >= i; j --) {
+            if(a[j] == 0) break;
+        }
+
+        if(i != n) cout<<(j-i+2)<<endl;
+        else cout<<"0\n";
+    }
+    
+}

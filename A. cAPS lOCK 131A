@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+using ll = long long;
+#define fl(i, n) for(ll i = 1; i < n; i ++)
+#define fj(i, n) for(ll i = 0; i < n; i ++)
+ 
+ 
+// A - Z == 65 - 90 in Ascii 
+// a - z == 97 - 122 in Ascii
+ 
+int main() 
+{
+    string str;
+    cin>>str;
+    
+    bool istrue = true;
+ 
+    fl(i, str.length()) {
+        if(str[i] >= 97) {
+            istrue = false;
+            break;
+        }
+    }
+ 
+    if(istrue) {
+        fj(i, str.length()){
+            if(str[i] >= 97) str[i] = str[i]-32;
+            else str[i] = str[i] + 32;
+        }
+        cout<<str;
+    }else{
+        cout<<str;
+    }
+ 
+    return 0;
+}
+ 
+//Allahamdulillak. Happy codeing.

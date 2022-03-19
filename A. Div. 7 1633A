@@ -1,0 +1,27 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int t;
+    
+    scanf("%d", &t);
+    while(t--)
+    {
+        int n, mod, def, ans1, ans2;
+        scanf("%d", &n);
+        int lst_di = n % 10;
+        
+        mod = n % 7;
+        def = 7 - mod;
+        ans1 = n + def;
+        ans2 = n - mod;
+        
+        if(n % 7 == 0) printf("%d\n", n);
+        else if ((lst_di+def) < 10) printf("%d\n", ans1);
+        else printf("%d\n", ans2);
+        
+    }
+    
+ 
+    return 0;
+}

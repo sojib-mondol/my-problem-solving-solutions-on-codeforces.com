@@ -1,0 +1,29 @@
+#include <iostream>
+#include<map>
+ 
+using namespace std;
+ 
+int main()
+{
+    int t;
+    string a;
+    map<string,int> reg;
+    cin>>t;
+    while(t--)
+    {
+        cin>>a;
+        if(reg[a] == 0)
+        {
+            reg[a] = 1;
+            cout<<"OK\n";
+        }
+        else
+        {
+            cout<<a<<reg[a]<<"\n";
+            reg[a]++;
+ 
+        }
+    }
+ 
+    return 0;
+}

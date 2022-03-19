@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define ll long long
+ 
+int main()
+{
+    ll t;
+    cin>>t;
+    while (t--)
+    {
+        ll n, i, j;
+        cin >> n;
+        if (n == 3)
+        {
+            cout << "3 2 1\n1 3 2\n3 1 2";
+        }
+        else
+        {
+            for(i = n; i > 0; i --)
+            {
+                for(j = i; j > 0; j --) cout<<j<<" ";
+                for(j = n; j > i; j --) cout<<j<<" ";
+                cout<<"\n";
+            }
+        }
+ 
+        cout<<"\n";
+    }
+}

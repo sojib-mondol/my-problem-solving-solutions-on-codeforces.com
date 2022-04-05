@@ -1,0 +1,28 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+     
+    typedef vector<string> vs;
+     
+     
+    #define fl(i,n) for(int i = 0; i < n; i ++)
+    #define pb push_back
+     
+    int main() {
+        int n;
+        cin>>n;
+        char a[n];
+        vs v;
+        int t1 = 0, t2 = 0, t3 = 0;
+        fl(i, n){
+            cin>>a[i];
+        }
+        fl(i, n) {
+            if(a[i] == 'R' && a[i+1] == 'R') t1 ++;
+            if(a[i] == 'G' && a[i+1] == 'G') t2 ++;
+            if(a[i] == 'B' && a[i+1] == 'B') t3 ++;
+        }
+     
+        cout<<t1+t2+t3<<"\n";
+     
+     
+    }

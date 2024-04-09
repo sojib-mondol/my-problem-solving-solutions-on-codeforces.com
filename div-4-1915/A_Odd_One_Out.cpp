@@ -1,3 +1,7 @@
+//bismillah
+//https://codeforces.com/contest/1915/problem/A
+// solition for problem A in c++
+
 #include <bits/stdc++.h>
 
 using namespace std;

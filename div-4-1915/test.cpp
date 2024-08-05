@@ -1,3 +1,7 @@
+// bismillah
+// https://codeforces.com/contest/1915/problem/D
+//  solition for problem D in c++
+
 #include <bits/stdc++.h>
 
 using namespace std;
